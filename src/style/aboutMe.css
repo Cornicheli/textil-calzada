@@ -1,0 +1,16 @@
+.about-me {
+    background-image: url(https://textilcalzada.com/wp-content/uploads/2020/05/online_store_50.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-about {
+    padding: 15px;
+    background: #e3e3e3ab;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+    min-height: 300px;
+    border-radius: 18px;
+    text-decoration: none;
+}

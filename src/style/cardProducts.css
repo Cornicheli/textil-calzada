@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* font-family: "Lucida Handwriting"; */
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-card {
+    width: 350px;
+    height: 380px;
+    position: relative;
+    margin: 10px
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item-card .txt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.item-card:hover .txt {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.item-card h2 {
+    font-size: 40px;
+}
+
+.item-card p {
+    font-size: 20px;
+}
+
+.item-card h2:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 10px 0;
+    background-color: white;
+    transition: width .5s .2s;
+}
+
+.item-card:hover h2:after {
+    width: 100%;
+}
