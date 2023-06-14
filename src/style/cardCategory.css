@@ -1,0 +1,161 @@
+.ctn-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+/* IMG - CARD  */
+
+.ctn-tapiceria {
+    background-image: url('../asset/image/tapiceria.png');
+}
+
+.ctn-multiproposito {
+    background-image: url('../asset/image/multiproposito.png');
+}
+
+.ctn-estampados {
+    background-image: url('../asset/image/estampados.png');
+}
+
+.ctn-corderito {
+    background-image: url('../asset/image/corderito.png');
+}
+
+.ctn-tusores {
+    background-image: url('../asset/image/tusores.png');
+}
+
+.ctn-silver {
+    background-image: url('../asset/image/silver.jpg');
+    width: 450px;
+    height: 100%;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ctn-cordura {
+    background-image: url('../asset/image/cordura.jpg');
+    width: 450px;
+    height: 100%;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+/* IMG - CARD  */
+
+.card-title {
+    font-size: 40px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.anchor-category {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.anchor-category:hover {
+    color: white;
+}
+
+/* BTN - CARD  */
+
+.cnt-redirection {
+    position: relative;
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.cnt-redirection:hover {
+    animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+.cnt-redirection:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+.cnt-redirection::before,
+.cnt-redirection::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+.cnt-redirection:hover::before,
+.cnt-redirection:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.cnt-redirection:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.cnt-redirection:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+}
+
+/* BTN - CARD  */

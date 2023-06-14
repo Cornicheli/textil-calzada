@@ -22,7 +22,7 @@
   }
 }
 
-.ctn-header {
+/* .ctn-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -75,4 +75,4 @@
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
