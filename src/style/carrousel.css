@@ -1,0 +1,92 @@
+/* HEADER CARROUSEL  */
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* HEADER CARROUSEL  */
+
+/* PRODUCTS CARROUSEL  */
+
+.ctn-panna {
+  background-image: url('../asset//image/panna.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.ctn-cuerina {
+  background-image: url('../asset//image/cuerina.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* PRODUCTS CARROUSEL  */
+
+/* PRODUCTS CARDS  */
+
+.card-carrousel {
+  height: 475px;
+  width: 315px;
+  /* border: solid 3px black; */
+}
+
+/* PRODUCTS CARDS  */
+
+
+/* BTN CARDS  */
+
+.btn-buyCarrito {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #383e47;
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.818);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+.btn-buyCarrito::before {
+  width: 250px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: #333333;
+  color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.btn-buyCarrito:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+
+.btn-buyCarrito:active {
+  transform: translate(5px, 5px);
+  transition-duration: .3s;
+}
+
+/* BTN CARDS  */

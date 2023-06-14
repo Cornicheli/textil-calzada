@@ -32,7 +32,7 @@
     font-size: x-large;
 }
 
-.card {
+.card-form-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,7 +168,7 @@
     background: #e3e3e3ab;
     border-radius: 8px;
     backdrop-filter: blur(3px);
-    min-height: 350px;
+    min-height: 400px;
 }
 
 .btn-social {
