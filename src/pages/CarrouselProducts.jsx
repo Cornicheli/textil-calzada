@@ -7,10 +7,9 @@ import '../style/carrousel.css'
 
 export default function CarrouselProducts() {
 
-
     const product = productData.map((item) => (
         <CardCarousel
-            key={item.id}
+            key=''
             name={item.name}
             img={item.img}
             price={item.price}
@@ -20,44 +19,44 @@ export default function CarrouselProducts() {
 
     return (
         <main>
-            <section className="d-flex flex-arrow p-3">
-                <figure className="d-flex justify-content-around flex-column m-5 ctn-panna" style={{ height: '550px', width: '600px' }}>
+            <section className="d-flex flex-arrow p-3 justify-content-start">
+                <figure className="d-flex justify-content-around flex-column m-5 ctn-panna" style={{ height: '350px', width: '100%' }}>
                     <h1 className="text-center text-light" style={{ fontSize: '75px' }}>
                         Panna
                     </h1>
                     <div className='d-flex justify-content-center'>
-                        <Link className='btn-buyCarrito' to='#'>
+                        <Link className='anchor-category' to='#' style={{ color: "white" }}>
                             Ver mas
                         </Link>
                     </div>
                 </figure>
-                <Carousel className="w-100 p-1" responsive={responsive}>
-                    {product}
-                </Carousel>
             </section>
-            <section className="d-flex flex-arrow p-3">
-                <figure className="d-flex justify-content-around flex-column m-5 ctn-cuerina" style={{ height: '550px', width: '600px' }}>
+            <Carousel className="w-100 p-5" responsive={responsive}>
+                {product}
+            </Carousel>
+            <section className="d-flex flex-arrow p-3 justify-content-end">
+                <figure className="d-flex justify-content-around flex-column m-5 ctn-cuerina" style={{ height: '350px', width: '100%' }}>
                     <h1 className="text-center  text-light" style={{ fontSize: '75px' }}>
                         Cuerina
                     </h1>
                     <div className='d-flex justify-content-center'>
-                        <Link className='btn-buyCarrito' to='#'>
+                        <Link className='anchor-category' to='#' style={{ color: "white" }}>
                             Ver mas
                         </Link>
                     </div>
                 </figure>
-                <Carousel className="w-100 p-1" responsive={responsive}>
-                    {product}
-                </Carousel>
             </section>
+            <Carousel className="w-100 p-5" responsive={responsive}>
+                {product}
+            </Carousel>
             <section>
                 <h1 className="text-center fs-1 mb-4">
                     LOS MÁS VENDIDOS
                 </h1>
-                <Carousel className="w-100 p-1" responsive={responsive}>
-                    {product}
-                </Carousel>
             </section>
+            <Carousel className="w-100 p-5" responsive={responsive}>
+                {product}
+            </Carousel>
         </main>
     )
 }

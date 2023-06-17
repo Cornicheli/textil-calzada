@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* font-family: "Lucida Handwriting"; */
 }
 
 .wrap {
@@ -13,6 +12,7 @@
 }
 
 .item-card {
+    display: flex;
     width: 350px;
     height: 380px;
     position: relative;

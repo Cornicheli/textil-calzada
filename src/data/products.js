@@ -1,21 +1,22 @@
 export const responsive = {
     superLargeDesktop: {
+        // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 1024 },
         items: 5,
-        slidesToSlide: 2
+        slidesToSlide: 2,
     },
     desktop: {
-        breakpoint: { max: 3000, min: 800 },
-        items: 4
+        breakpoint: { max: 1024, min: 800 },
+        items: 4,
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2
+        breakpoint: { max: 800, min: 464 },
+        items: 2,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1
-    }
+        items: 1,
+    },
 };
 
 export const productData = [
@@ -42,7 +43,7 @@ export const productData = [
     },
     {
         id: 4,
-        img: 'imagen4.jpg',
+        img: 'https://i0.wp.com/textilcalzada.com/wp-content/uploads/2020/05/cuerina_LIsa.jpeg?fit=768%2C768&ssl=1',
         name: 'Producto 4',
         description: 'Descripción del producto 4',
         price: 12.99

@@ -55,25 +55,25 @@ function FormContac() {
             </div>
             <div className="d-flex align-items-center m-2 p-1">
                 <Fade right>
-                    <div className="card-form-contact">
+                    <form className="card-form-contact">
                         <div className="inputBox">
-                            <input type="text" required="required" />
+                            <input name='nombre' type="text" required="required" />
                             <span className="user">Nombre</span>
                         </div>
                         <div className="inputBox">
-                            <input type="text" required="required" />
+                            <input name='apellido' type="text" required="required" />
                             <span>Apellido</span>
                         </div>
                         <div className="inputBox">
-                            <input type="email" required="required" />
+                            <input name='email' type="email" required="required" />
                             <span>Email</span>
                         </div>
                         <div className="inputBox">
-                            <input type="text" required="required" style={{ height: '75px' }} />
+                            <input name='mensaje' type="text" required="required" style={{ height: '75px' }} />
                             <span>Mensaje</span>
                         </div>
                         <button className="btn-form">Enviar</button>
-                    </div>
+                    </form>
                 </Fade>
             </div>
         </main>
