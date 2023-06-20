@@ -1,17 +1,10 @@
-import { CardProducts, Header, Carrousel, Map } from './components'
-import { AboutMe, FormContac } from './pages'
-import './style/header.css'
+import { Home } from './pages'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Carrousel />
-      <AboutMe />
-      <CardProducts />
-      <FormContac />
-      <Map />
+      <Home />
     </>
   )
 

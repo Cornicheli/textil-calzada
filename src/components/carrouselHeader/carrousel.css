@@ -15,7 +15,7 @@
 /* PRODUCTS CARROUSEL  */
 
 .ctn-panna {
-  background-image: url('../asset//image/panna.png');
+  background-image: url('../../asset/image/panna.png');
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -23,7 +23,7 @@
 }
 
 .ctn-cuerina {
-  background-image: url('../asset//image/cuerina.jpeg');
+  background-image: url('../../asset/image/cuerina.jpeg');
   background-position: center;
   background-size: cover;
   height: 100%;

@@ -1,15 +1,14 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { CardCarousel } from '../components'
-import { productData, responsive } from "../data/products";
+import { CardCarousel } from '../../components'
+import { productData, responsive } from "../../mocks/products";
 import { Link } from "react-router-dom";
-import '../style/carrousel.css'
 
 export default function CarrouselProducts() {
 
     const product = productData.map((item) => (
         <CardCarousel
-            key=''
+            key='cardproduct'
             name={item.name}
             img={item.img}
             price={item.price}
@@ -18,7 +17,7 @@ export default function CarrouselProducts() {
     ));
 
     return (
-        <main>
+        <section>
             <section className="d-flex flex-arrow p-3 justify-content-start">
                 <figure className="d-flex justify-content-around flex-column m-5 ctn-panna" style={{ height: '350px', width: '100%' }}>
                     <h1 className="text-center text-light" style={{ fontSize: '75px' }}>
@@ -57,6 +56,6 @@ export default function CarrouselProducts() {
             <Carousel className="w-100 p-5" responsive={responsive}>
                 {product}
             </Carousel>
-        </main>
+        </section>
     )
 }

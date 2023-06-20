@@ -13,27 +13,27 @@
 /* IMG - CARD  */
 
 .ctn-tapiceria {
-    background-image: url('../asset/image/tapiceria.png');
+    background-image: url('../../asset/image/tapiceria.png');
 }
 
 .ctn-multiproposito {
-    background-image: url('../asset/image/multiproposito.png');
+    background-image: url('../../asset/image/multiproposito.png');
 }
 
 .ctn-estampados {
-    background-image: url('../asset/image/estampados.png');
+    background-image: url('../../asset/image/estampados.png');
 }
 
 .ctn-corderito {
-    background-image: url('../asset/image/corderito.png');
+    background-image: url('../../asset/image/corderito.png');
 }
 
 .ctn-tusores {
-    background-image: url('../asset/image/tusores.png');
+    background-image: url('../../asset/image/tusores.png');
 }
 
 .ctn-silver {
-    background-image: url('../asset/image/silver.jpg');
+    background-image: url('../../asset/image/silver.jpg');
     width: 450px;
     height: 100%;
     padding: 0;
@@ -44,7 +44,7 @@
 }
 
 .ctn-cordura {
-    background-image: url('../asset/image/cordura.jpg');
+    background-image: url('../../asset/image/cordura.jpg');
     width: 450px;
     height: 100%;
     padding: 0;

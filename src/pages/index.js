@@ -1,6 +1,3 @@
-import AboutMe from "./AboutMe";
-import CarrouselProducts from "./CarrouselProducts";
-import FormContac from "./FormContac";
-import Telas from './Telas'
+import Home from "./Home";
 
-export { AboutMe, FormContac, CarrouselProducts, Telas } 
+export { Home } 

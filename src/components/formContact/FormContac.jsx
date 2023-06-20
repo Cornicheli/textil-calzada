@@ -1,10 +1,10 @@
 import Fade from 'react-reveal/Fade';
-import "../style/formContac.css";
-import { Email, PhoneIcon, WhatsappIcon } from '../asset/icon/index'
+import "./formContac.css";
+import { Email, PhoneIcon, WhatsappIcon } from '../../asset/icon/index'
 
 function FormContac() {
     return (
-        <main className="ctn-formContac border border-dark">
+        <section className="ctn-formContac border border-dark">
             <div className="d-flex flex-column justify-content-evenly align-items-center contact-info m-5 p-1">
                 <Fade left>
                     <h1 className="fs-2 text-center" style={{ color: '#333333', fontWeight: 700, marginBottom: '15px' }}>
@@ -76,7 +76,7 @@ function FormContac() {
                     </form>
                 </Fade>
             </div>
-        </main>
+        </section>
     );
 }
 

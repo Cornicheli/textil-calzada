@@ -1,10 +1,10 @@
 import Fade from 'react-reveal/Fade';
-import "../style/cardProducts.css";
+import './cardProducts.css'
 
 export default function CardProducts() {
     return (
         <>
-            <main className='border-dark d-flex flex-column p-5'>
+            <section className='border-dark d-flex flex-column p-5'>
                 <div className='m-3'>
                     <h1 className='text-center fs-1'>
                         Novedades
@@ -95,7 +95,7 @@ export default function CardProducts() {
                         </div>
                     </Fade>
                 </div>
-            </main>
+            </section>
         </>
     );
 }
