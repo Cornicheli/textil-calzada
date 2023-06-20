@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import 'react-multi-carousel/lib/styles.css';
-import '../style/carrousel.css'
+
 export default function CardCarousel(props) {
+
     const { name, price, description, img } = props;
 
     return (
