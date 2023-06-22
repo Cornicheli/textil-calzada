@@ -1,26 +1,30 @@
 import PropTypes from 'prop-types';
 import 'react-multi-carousel/lib/styles.css';
+// import { useCart } from '../../hooks/useCart.js'
 
 export default function CardCarousel(props) {
 
-    const { name, price, description, img } = props;
+    const { price, description, thumbnail, title } = props;
+    // const { cart, clearCart, addToCart } = useCart()
 
     return (
-        <div className='d-flex flex-column justify-content-around align-items-center card-carrousel p-3'>
-            <img src={img} alt="" style={{ height: '210px', width: '210px' }} />
-            <h5 className='fs-4 m-1 p-1'>{name}</h5>
+        <li className='d-flex flex-column justify-content-around align-items-center card-carrousel p-3'>
+            <figure style={{ height: '210px', width: '210px' }} >
+                <img src={thumbnail} alt={title} style={{ width: '100%', height: '100%' }} />
+            </figure>
+            <h5 className='fs-4 m-1 p-1'>{title}</h5>
             <p>{description}</p>
             <p> $ {price}</p>
             <div>
                 <button className="anchor-category">AGREGAR</button>
             </div>
-        </div>
+        </li>
     );
 }
 
 CardCarousel.propTypes = {
-    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    img: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string.isRequired,
 };

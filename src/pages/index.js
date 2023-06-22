@@ -1,3 +1,4 @@
 import Home from "./Home";
+import Telas from "./Telas";
 
-export { Home } 
+export { Home, Telas } 
