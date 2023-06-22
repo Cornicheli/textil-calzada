@@ -9,8 +9,8 @@ export default function CarrouselProducts() {
     const product = productData.map((item) => (
         <CardCarousel
             key='cardproduct'
-            name={item.name}
-            img={item.img}
+            title={item.title}
+            thumbnail={item.thumbnail}
             price={item.price}
             description={item.description}
         />
@@ -19,7 +19,7 @@ export default function CarrouselProducts() {
     return (
         <section>
             <section className="d-flex flex-arrow p-3 justify-content-start">
-                <figure className="d-flex justify-content-around flex-column m-5 ctn-panna" style={{ height: '350px', width: '100%' }}>
+                <figure className="d-flex justify-content-around flex-column m-7 ctn-panna" style={{ height: '350px', width: '100%' }}>
                     <h1 className="text-center text-light" style={{ fontSize: '75px' }}>
                         Panna
                     </h1>

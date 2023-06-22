@@ -6,6 +6,6 @@ import CardCarousel from "./carrouselProducts/CardCarousel";
 import AboutMe from "./aboutMe/AboutMe";
 import CarrouselProducts from "./carrouselProducts/CarrouselProducts";
 import FormContac from "./formContact/FormContac";
-import Telas from './Telas'
+import Telas from '../pages/Telas'
 
 export { CardProducts, Header, Carrousel, Map, CardCarousel, AboutMe, FormContac, CarrouselProducts, Telas }
