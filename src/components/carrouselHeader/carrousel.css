@@ -1,4 +1,4 @@
-/* HEADER CARROUSEL  */
+/* HEADER CARROUSEL */
 
 .c-item {
   height: 480px;
@@ -10,9 +10,9 @@
   filter: brightness(0.6);
 }
 
-/* HEADER CARROUSEL  */
+/* HEADER CARROUSEL */
 
-/* PRODUCTS CARROUSEL  */
+/* PRODUCTS CARROUSEL */
 
 .ctn-panna {
   background-image: url('../../asset/image/panna.png');
@@ -30,9 +30,9 @@
   width: 100%;
 }
 
-/* PRODUCTS CARROUSEL  */
+/* PRODUCTS CARROUSEL */
 
-/* PRODUCTS CARDS  */
+/* PRODUCTS CARDS */
 
 .card-carrousel {
   height: 450px;
@@ -41,10 +41,9 @@
   border-radius: 8px;
 }
 
-/* PRODUCTS CARDS  */
+/* PRODUCTS CARDS */
 
-
-/* BTN CARDS  */
+/* BTN CARDS */
 
 .anchor-category {
   width: 250px;
@@ -90,4 +89,4 @@
   transition-duration: .3s;
 }
 
-/* BTN CARDS  */
+/* BTN CARDS */

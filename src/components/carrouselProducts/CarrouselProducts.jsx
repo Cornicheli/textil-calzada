@@ -30,9 +30,6 @@ export default function CarrouselProducts() {
                     </div>
                 </figure>
             </section>
-            <Carousel className="w-100 p-5" responsive={responsive}>
-                {product}
-            </Carousel>
             <section className="d-flex flex-arrow p-3 justify-content-end">
                 <figure className="d-flex justify-content-around flex-column m-5 ctn-cuerina" style={{ height: '350px', width: '100%' }}>
                     <h1 className="text-center  text-light" style={{ fontSize: '75px' }}>
@@ -45,9 +42,6 @@ export default function CarrouselProducts() {
                     </div>
                 </figure>
             </section>
-            <Carousel className="w-100 p-5" responsive={responsive}>
-                {product}
-            </Carousel>
             <section>
                 <h1 className="text-center fs-1 mb-4">
                     LOS MÁS VENDIDOS

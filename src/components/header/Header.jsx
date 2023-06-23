@@ -4,19 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css';
 
 const Header = () => {
-    // const [isScrolled, setIsScrolled] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         setIsScrolled(window.scrollY > 0);
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
 
     const NavLineaCama = [
         { text: "Linea de Cama", to: "/lineadecama" },
@@ -85,7 +72,7 @@ const Header = () => {
                         </h5>
                         <button
                             type="button"
-                            className="btn-close btn-close-white"
+                            className="btn-close btn-close-black"
                             data-bs-dismiss="offcanvas"
                             aria-label="Close"
                         />
