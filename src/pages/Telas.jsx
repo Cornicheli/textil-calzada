@@ -7,7 +7,7 @@ export default function Telax() {
     return (
         <>
             <Header />
-            <section className="d-flex align-items-center justify-content-center flex-column p-5">
+            <section className="d-flex align-items-center justify-content-center flex-column p-5" >
                 <div className="ctn-card text-center ctn-tapiceria">
                     <div className="card-body d-flex align-items-center justify-content-center flex-column">
                         <h5 className="card-title">Tapiceria</h5>
@@ -24,7 +24,7 @@ export default function Telax() {
                         <h5 className="card-title">MultiProposito</h5>
                         <p className="card-text">Venta x Mayor y Menor</p>
                         <div className='cnt-redirection'>
-                            <Link className='anchor-category' to='#' style={{ color: "white" }}>
+                            <Link className='anchor-category' to='/multipropositos' style={{ color: "white" }}>
                                 Las Necesito!
                             </Link>
                         </div>

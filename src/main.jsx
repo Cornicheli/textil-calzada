@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './pages'
-import { Telas } from './components'
+import { Home, Multi } from './pages'
+import { Telas, MultiPropositos } from './components'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/categorias' element={<Telas />} />
+        <Route path='/multipropositos' element={<Multi />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

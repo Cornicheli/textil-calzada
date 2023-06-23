@@ -1,0 +1,101 @@
+.ctn-main-multiproposito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    gap: 15px;
+}
+
+.card-multiproposito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 550px;
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.wrapper-img-multiproposito {
+    /* Estilos para el contenedor de la imagen */
+    width: 250px;
+    height: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.img-wrapper-multiproposito {
+    /* Estilos para la imagen */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://telasxmetro.vtexassets.com/arquivos/ids/173235-500-auto?v=1773760228&width=500&height=auto&aspect=true);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.img-wrapper-multiproposito:hover {
+    /* Cambio de imagen al hacer hover */
+    background-image: url(https://telasxmetro.vtexassets.com/arquivos/ids/173236-500-auto?v=1773853564&width=500&height=auto&aspect=true);
+}
+
+.img-wrapper-multiproposito::before {
+    /* Efecto más suave al hacer hover */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.img-wrapper-multiproposito:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.price-multiproposito {
+    /* Estilos para el precio */
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 3px;
+}
+
+.quantity-btn-multiproposito {
+    /* Estilos para los botones de cantidad */
+    outline: none;
+    border: none;
+    height: 48px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.quantity-control-multiproposito {
+    /* Estilos para el contenedor de control de cantidad */
+    height: 50px;
+    border: 2px solid lightgray;
+}
+
+.quantity-input-multiproposito {
+    /* Estilos para el campo de entrada de cantidad */
+    text-align: center;
+    outline: none;
+    height: 47px;
+    width: 115px;
+    border: none;
+}
+
+.add-btn-multiproposito {
+    /* Estilos para el botón de agregar */
+    width: 235px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}

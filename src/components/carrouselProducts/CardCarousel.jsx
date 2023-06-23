@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 import 'react-multi-carousel/lib/styles.css';
-// import { useCart } from '../../hooks/useCart.js'
-
 export default function CardCarousel(props) {
 
     const { price, description, thumbnail, title } = props;
-    // const { cart, clearCart, addToCart } = useCart()
 
     return (
         <li className='d-flex flex-column justify-content-around align-items-center card-carrousel p-3'>
