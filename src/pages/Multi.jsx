@@ -4,14 +4,17 @@ export default function Multi() {
     return (
         <>
             <Header />
-            <div className='d-flex flex-row' style={{
-                marginTop: '7rem',
+            <section style={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
                 padding: '15px',
-                overflow: 'auto',
             }}>
-                <Filters />
+                <div style={{ marginTop: '50px' }}>
+                    <Filters />
+                </div>
                 <MultiPropositos />
-            </div>
+            </section>
         </>
 
     )

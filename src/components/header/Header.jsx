@@ -1,9 +1,24 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css';
 
 const Header = () => {
+
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isHeaderSticky = window.scrollY > 0;
+            setIsSticky(isHeaderSticky);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const NavLineaCama = [
         { text: "Linea de Cama", to: "/lineadecama" },
@@ -42,11 +57,14 @@ const Header = () => {
     ];
 
     return (
-        <header className="navbar fixed-top ctn-header" >
-            <div className="container-fluid">
-                <h1 className="navbar-brand" style={{ marginLeft: '115px', color: 'black' }}>
+        <header className={`ctn-header navbar fixed-top ${isSticky ? 'flex' : ''}`}>
+            <div className="container-fluid d-flex justify-content-around">
+                <h1 className="navbar-brand" style={{ color: 'black' }}>
                     Textil Calzada
                 </h1>
+                {/* <label style={{ width: '375px', height: '35px' }}>
+                    <input style={{ width: '100%', height: '100%', borderRadius: '8px', outline: 'none', border: ' none', padding: '7px' }} type="search" placeholder="¿Qué tela estas buscando?" />
+                </label> */}
                 <button
                     className="navbar-toggler"
                     type="button"

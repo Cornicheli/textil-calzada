@@ -1,16 +1,63 @@
+import InfiniteScroll from 'react-infinite-scroll-component';
 import multiPropositos from '../../mocks/multiPropositos';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import './multiproposito.css';
 
 export default function MultiPropositos() {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [filteredItems, setFilteredItems] = useState([]);
+    const [visibleCards, setVisibleCards] = useState(10);
+
+    const handleSearch = (event) => {
+        const term = event.target.value;
+        setSearchTerm(term);
+
+        const result = multiPropositos.filter((item) => {
+            return item.title.toLowerCase().includes(term.toLowerCase());
+        });
+
+        setFilteredItems(result);
+        setVisibleCards(10); // Reiniciar el número de cartas visibles al hacer una nueva búsqueda
+    };
+
+    const itemsToShow = searchTerm !== '' ? filteredItems.slice(0, visibleCards) : multiPropositos.slice(0, visibleCards);
+
+    const loadMore = () => {
+        setVisibleCards((prevVisibleCards) => prevVisibleCards + 10); // Cargar 10 cartas adicionales al hacer scroll
+    };
 
     return (
-        <section className='ctn-main-multiproposito' style={{ width: '85%', padding: '15px' }}>
-            {multiPropositos.map((producto) => (
-                <CartaMultiproposito key={producto.id} producto={producto} />
-            ))}
-        </section>
+        <div style={{ display: 'flex', alignItems: 'start', flexDirection: 'column', padding: '15px', width: '80vw' }}>
+            {/* Campo de búsqueda */}
+            <label style={{ width: '100%', height: '50px', display: 'flex', justifyContent: 'center', margin: '12px' }}>
+                <input
+                    style={{ width: '375px', height: '100%', borderRadius: '8px', outline: 'none', border: 'solid 2px black', padding: '10px' }}
+                    type="search"
+                    placeholder="¿Qué tela estás buscando?"
+                    value={searchTerm}
+                    onChange={handleSearch}
+                />
+            </label>
+            {/* Componente InfiniteScroll */}
+            <InfiniteScroll
+                className='ctn-main-multiproposito'
+                dataLength={itemsToShow.length}
+                next={loadMore}
+                hasMore={itemsToShow.length < (searchTerm !== '' ? filteredItems.length : multiPropositos.length)}
+                loader={<h4>Cargando...</h4>}
+                endMessage={
+                    <div className="end-message-column">
+                        <h4>No hay más productos... 😔</h4>
+                    </div>
+                }
+            >
+                {/* Lista de cartas */}
+                {itemsToShow.map((producto) => (
+                    <CartaMultiproposito key={producto.id} producto={producto} />
+                ))}
+            </InfiniteScroll>
+        </div>
     );
 }
 
@@ -36,8 +83,7 @@ function CartaMultiproposito({ producto }) {
                 <div className="d-flex flex-column align-items-center">
                     {/* Contenedor de la imagen */}
                     <figure className='wrapper-img-multiproposito'>
-                        <div className='img-wrapper-multiproposito'
-                            style={{ backgroundImage: `url(${producto.thumbnail})` }} />
+                        <div className='img-wrapper-multiproposito' style={{ backgroundImage: `url(${producto.thumbnail})` }} />
                     </figure>
                     <span className='p-2'>
                         <h1 className="fs-5">
@@ -48,20 +94,12 @@ function CartaMultiproposito({ producto }) {
                 <div className="d-flex flex-column aling-items-center w-100 justify-content-between">
                     {/* Precios */}
                     <div className="w-100 d-flex justify-content-between price-multiproposito">
-                        <span className="m-3">
-                            + 1m
-                        </span>
-                        <span className="m-3">
-                            $870
-                        </span>
+                        <span className="m-3">+ 1m</span>
+                        <span className="m-3">$ 870</span>
                     </div>
                     <div className="w-100 d-flex justify-content-between price-multiproposito">
-                        <span className="m-3">
-                            + 5m
-                        </span>
-                        <span className="m-3">
-                            $800
-                        </span>
+                        <span className="m-3">+ 5m</span>
+                        <span className="m-3">$ 800</span>
                     </div>
                 </div>
                 {/* Control de cantidad */}
@@ -72,9 +110,7 @@ function CartaMultiproposito({ producto }) {
                 </div>
                 <div className='w-100 p-2'>
                     {/* Botón de agregar */}
-                    <button className='add-btn-multiproposito'>
-                        AGREGAR
-                    </button>
+                    <button className='add-btn-multiproposito'>AGREGAR</button>
                 </div>
             </section>
         </>
@@ -88,3 +124,4 @@ CartaMultiproposito.propTypes = {
         stock: PropTypes.number.isRequired,
     }).isRequired,
 };
+

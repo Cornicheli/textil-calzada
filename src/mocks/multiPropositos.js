@@ -1,10 +1,15 @@
+// lame completo
+// gasa completo
+// voile completo
+// batista completo
+
 const multiPropositos = [
     {
         "id": 1,
         "title": "Voile Azul Francia 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173235-500-auto?v=1773760228&width=500&height=auto&aspect=true",
     },
     {
@@ -12,7 +17,7 @@ const multiPropositos = [
         "title": "Voile Blanco 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173252-500-auto?v=1773865247&width=500&height=auto&aspect=true",
     },
     {
@@ -20,7 +25,7 @@ const multiPropositos = [
         "title": "Voile Maiz 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173219-500-auto?v=1773760241&width=500&height=auto&aspect=true",
     },
     {
@@ -28,7 +33,7 @@ const multiPropositos = [
         "title": "Voile Natural 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173247-500-auto?v=1773844266&width=500&height=auto&aspect=true",
     },
     {
@@ -36,7 +41,7 @@ const multiPropositos = [
         "title": "Voile Verde Benetton 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173229-500-auto?v=1773853561&width=500&height=auto&aspect=true",
     },
     {
@@ -44,7 +49,7 @@ const multiPropositos = [
         "title": "Voile Verde Manzana 3 mt. de Ancho",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "voile",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173224-500-auto?v=1773326425&width=500&height=auto&aspect=true",
     },
     {
@@ -52,7 +57,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Amarillo",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156036-500-auto?v=1773255252&width=500&height=auto&aspect=true",
     },
     {
@@ -60,7 +65,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Blanco",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156042-500-auto?v=1773752218&width=500&height=auto&aspect=true",
     },
     {
@@ -68,7 +73,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Dorado",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156047-500-auto?v=1773835194&width=500&height=auto&aspect=true",
     },
     {
@@ -76,7 +81,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Fucsia",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156049-500-auto?v=1773255292&width=500&height=auto&aspect=true",
     },
     {
@@ -84,7 +89,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Lila",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156052-500-auto?v=1773760241&width=500&height=auto&aspect=true",
     },
     {
@@ -92,7 +97,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Naranja",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156055-500-auto?v=1773255324&width=500&height=auto&aspect=true",
     },
     {
@@ -100,7 +105,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Rosa Chicle",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156064-500-auto?v=1773255326&width=500&height=auto&aspect=true",
     },
     {
@@ -108,7 +113,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Verde Benetton",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156070-500-auto?v=1773255313&width=500&height=auto&aspect=true",
     },
     {
@@ -116,7 +121,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Verde Manzana",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156073-500-auto?v=1773255322&width=500&height=auto&aspect=true",
     },
     {
@@ -124,7 +129,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Violeta",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156076-500-auto?v=1773326677&width=500&height=auto&aspect=true",
     },
     {
@@ -132,7 +137,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Petroleo",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/161276-500-auto?v=1773255288&width=500&height=auto&aspect=true",
     },
     {
@@ -140,7 +145,7 @@ const multiPropositos = [
         "title": "Gasa Cristal Organza Amarillo Oro",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "gasa",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/162271-500-auto?v=1773255240&width=500&height=auto&aspect=true",
     },
     {
@@ -148,7 +153,7 @@ const multiPropositos = [
         "title": "Lamé Azul Francia",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "lame",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156239-500-auto?v=1773932078&width=500&height=auto&aspect=true",
     },
     {
@@ -156,7 +161,7 @@ const multiPropositos = [
         "title": "Lamé Azul Fucsia",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "lame",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156247-500-auto?v=1773932207&width=500&height=auto&aspect=true",
     },
     {
@@ -164,7 +169,7 @@ const multiPropositos = [
         "title": "Lamé Verde",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "lame",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156253-500-auto?v=1773932211&width=500&height=auto&aspect=truee",
     },
     {
@@ -180,7 +185,7 @@ const multiPropositos = [
         "title": "Raso Saten Verde Benetton",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "rasoSaten",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174727-500-auto?v=1773255270&width=500&height=auto&aspect=true",
     },
     {
@@ -188,7 +193,7 @@ const multiPropositos = [
         "title": "Raso Saten Negro",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "rasoSaten",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174752-500-auto?v=1773841429&width=500&height=auto&aspect=true",
     },
     {
@@ -196,8 +201,312 @@ const multiPropositos = [
         "title": "Lamé Saten Rojo",
         "price": 30,
         "stock": 54,
-        "category": "multiproposito",
+        "category": "lame",
         "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/155465-500-auto?v=1773255323&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 26,
+        "title": "Gasa Cristal Organza Verde Manzana",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156073-500-auto?v=1773255322&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 27,
+        "title": "Voile Rosa 3 mt. de Ancho",
+        "price": 30,
+        "stock": 54,
+        "category": "voile",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173188-500-auto?v=1771956285&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 28,
+        "title": "Gasa Muselina Naranja Fluo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/164187-500-auto?v=1773953811&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 29,
+        "title": "Gasa Muselina Negro",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156108-500-auto?v=1773953802&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 30,
+        "title": "Gasa Muselina Amarillo Fluo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/164199-500-auto?v=1773953826&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 31,
+        "title": "Gasa Muselina Rojo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156112-500-auto?v=1773255292&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 32,
+        "title": "Gasa Muselina Celeste",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/164170-500-auto?v=1773255293&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 33,
+        "title": "Gasa Cristal Organza Negro",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156058-500-auto?v=1773255247&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 34,
+        "title": "Gasa Cristal Estrellas Verde",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156619-500-auto?v=1773953636&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 35,
+        "title": "Gasa Cristal Organza Turquesa",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/156236-500-auto?v=1773255310&width=500&height=auto&aspect=true",
+    },
+    {
+        "id": 36,
+        "title": "Batista Blanca",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173902-500-auto?v=1773949092&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 37,
+        "title": "Batista Rosa",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173850-500-auto?v=1773844267&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 38,
+        "title": "Batista Azul Francia",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174390-500-auto?v=1773926640&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 39,
+        "title": "Batista Rojo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173871-500-auto?v=1773924953&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 40,
+        "title": "Batista Fucsia",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174009-500-auto?v=1773926624&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 41,
+        "title": "Batista Gris Topo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173972-500-auto?v=1773835433&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 42,
+        "title": "Batista Gris medio",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/171123-500-auto?v=1773751500&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 43,
+        "title": "Batista Gris Perla",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173987-500-auto?v=1773949081&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 44,
+        "title": "Batista Bordo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173865-500-auto?v=1772738809&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 45,
+        "title": "Batista Verde Manzana",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174002-500-auto?v=1772738792&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 46,
+        "title": "Batista Amarillo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173908-500-auto?v=1773946567&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 47,
+        "title": "Batista Verde Benetton",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174014-500-auto?v=1773940390&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 48,
+        "title": "Batista Celeste Medio",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/175845-500-auto?v=1773751435&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 49,
+        "title": "Batista Turquesa",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173977-500-auto?v=1772852322&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 50,
+        "title": "Batista Azul Marino",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174984-500-auto?v=1773753437&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 51,
+        "title": "Batista Naranja",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173876-500-auto?v=1773923098&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 52,
+        "title": "Batista Natural",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/173982-500-auto?v=1771956242&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 53,
+        "title": "Batista Verde Botella",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/155719-500-auto?v=1771956245&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 54,
+        "title": "Batista Petroleo",
+        "price": 30,
+        "stock": 54,
+        "category": "gasa",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/155689-500-auto?v=1771956242&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 55,
+        "title": "Saten Elastizado Celeste",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/176133-500-auto?v=1773255219&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 56,
+        "title": "Saten Elastizado Verde Oliva",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "hhttps://telasxmetro.vtexassets.com/arquivos/ids/170571-500-auto?v=1773844263&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 57,
+        "title": "Saten Elastizado Amarillo Oro",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174697-500-auto?v=1773844271&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 58,
+        "title": "Saten Elastizado Naranja",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/176138-500-auto?v=1773255251&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 59,
+        "title": "Saten Elastizado Turquesa",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/176143-500-auto?v=1773836455&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 60,
+        "title": "Saten Elastizado Amarillo",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/176998-500-auto?v=1773844267&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 61,
+        "title": "Saten Elastizado Verde Manzana",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/176993-500-auto?v=1773844261&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 62,
+        "title": "Saten Elastizado Negro",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/174702-500-auto?v=1773255218&width=500&height=auto&aspect=true"
+    },
+    {
+        "id": 63,
+        "title": "Saten Elastizado Bronce",
+        "price": 30,
+        "stock": 54,
+        "category": "saten elastizado",
+        "thumbnail": "https://telasxmetro.vtexassets.com/arquivos/ids/170558-500-auto?v=1773255252&width=500&height=auto&aspect=true"
     },
 ];
 export default multiPropositos;
