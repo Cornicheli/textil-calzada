@@ -24,11 +24,19 @@
 
 .ctn-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   background-color: #adc4cb96;
   z-index: 9999;
   transition: 1s;
+  position: sticky;
+  top: 0;
+}
+
+.ctn-header.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
