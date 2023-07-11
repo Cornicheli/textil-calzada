@@ -4,16 +4,13 @@ export default function Multi() {
     return (
         <>
             <Header />
-            <section style={{
-                display: 'flex',
-                justifyContent: 'center',
-                flexWrap: 'wrap',
-                padding: '15px',
-            }}>
-                <div style={{ marginTop: '50px' }}>
+            <section className='d-flex justify-content-center flex-wrap p-2'>
+                <div className='m-3'>
                     <Filters />
                 </div>
-                <MultiPropositos />
+                <div>
+                    <MultiPropositos />
+                </div>
             </section>
         </>
 

@@ -112,6 +112,7 @@
     color: #f0f0f0;
     z-index: 1;
     text-decoration: none;
+    margin: 15px
 }
 
 .btn-form::after,
@@ -160,6 +161,10 @@
     transform: translate(0, 5%);
 }
 
+.btn-form:hover {
+    color: #f0f0f0;
+}
+
 /* BUTTON CONTACT */
 
 /* SOCIAL CONTACT */
@@ -200,6 +205,11 @@
 .btn-social:disabled {
     cursor: auto;
     color: grey;
+}
+
+.ctn-contact {
+    width: 350px;
+    margin: 2;
 }
 
 /* SOCIAL CONTACT */

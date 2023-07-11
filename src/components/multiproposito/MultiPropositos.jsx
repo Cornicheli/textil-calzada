@@ -3,6 +3,7 @@ import multiPropositos from '../../mocks/multiPropositos';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import './multiproposito.css';
+import { Link } from 'react-router-dom';
 
 export default function MultiPropositos() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -28,11 +29,11 @@ export default function MultiPropositos() {
     };
 
     return (
-        <div style={{ display: 'flex', alignItems: 'start', flexDirection: 'column', padding: '15px', width: '80vw' }}>
+        <div className='ctn-card-multi'>
             {/* Campo de búsqueda */}
-            <label style={{ width: '100%', height: '50px', display: 'flex', justifyContent: 'center', margin: '12px' }}>
+            <label className='label-search-multi'>
                 <input
-                    style={{ width: '375px', height: '100%', borderRadius: '8px', outline: 'none', border: 'solid 2px black', padding: '10px' }}
+                    className='input-search-multi'
                     type="search"
                     placeholder="¿Qué tela estás buscando?"
                     value={searchTerm}
@@ -80,17 +81,19 @@ function CartaMultiproposito({ producto }) {
         <>
             {/* Contenedor principal de la tarjeta */}
             <section className='card-multiproposito'>
-                <div className="d-flex flex-column align-items-center">
-                    {/* Contenedor de la imagen */}
-                    <figure className='wrapper-img-multiproposito'>
-                        <div className='img-wrapper-multiproposito' style={{ backgroundImage: `url(${producto.thumbnail})` }} />
-                    </figure>
-                    <span className='p-2'>
-                        <h1 className="fs-5">
-                            {producto.title}
-                        </h1>
-                    </span>
-                </div>
+                <Link to='/categorias' className='text-dark text-decoration-none'>
+                    <div className="d-flex flex-column align-items-center">
+                        {/* Contenedor de la imagen */}
+                        <figure className='wrapper-img-multiproposito'>
+                            <div className='img-wrapper-multiproposito' style={{ backgroundImage: `url(${producto.thumbnail})` }} />
+                        </figure>
+                        <span className='p-2'>
+                            <h1 className="fs-5">
+                                {producto.title}
+                            </h1>
+                        </span>
+                    </div>
+                </Link>
                 <div className="d-flex flex-column aling-items-center w-100 justify-content-between">
                     {/* Precios */}
                     <div className="w-100 d-flex justify-content-between price-multiproposito">
