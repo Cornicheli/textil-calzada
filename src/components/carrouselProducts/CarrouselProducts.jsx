@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CardCarousel } from '../../components'
 import { productData, responsive } from "../../mocks/products";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function CarrouselProducts() {
 
@@ -17,9 +17,9 @@ export default function CarrouselProducts() {
     ));
 
     return (
-        <section>
-            <section className="d-flex flex-arrow p-3 justify-content-start">
-                <figure className="d-flex justify-content-around flex-column m-7 ctn-panna" style={{ height: '350px', width: '100%' }}>
+        <section className="d-flex align-items-center justify-content-center flex-column p-5">
+            {/* <section className="ctn-panna ctn-card">
+                <figure>
                     <h1 className="text-center text-light" style={{ fontSize: '75px' }}>
                         Panna
                     </h1>
@@ -30,8 +30,8 @@ export default function CarrouselProducts() {
                     </div>
                 </figure>
             </section>
-            <section className="d-flex flex-arrow p-3 justify-content-end">
-                <figure className="d-flex justify-content-around flex-column m-5 ctn-cuerina" style={{ height: '350px', width: '100%' }}>
+            <section className="ctn-cuerina ctn-card">
+                <figure>
                     <h1 className="text-center  text-light" style={{ fontSize: '75px' }}>
                         Cuerina
                     </h1>
@@ -41,13 +41,13 @@ export default function CarrouselProducts() {
                         </Link>
                     </div>
                 </figure>
-            </section>
+            </section> */}
             <section>
                 <h1 className="text-center fs-1 mb-4">
                     LOS MÁS VENDIDOS
                 </h1>
             </section>
-            <Carousel className="w-100 p-5" responsive={responsive}>
+            <Carousel className="w-100 p-3" responsive={responsive}>
                 {product}
             </Carousel>
         </section>

@@ -1,0 +1,43 @@
+.ctn-filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65px;
+    width: 265px;
+    border: none;
+}
+
+.filters {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border-bottom: solid 2px #c10d1b;
+    border-radius: 0px;
+}
+
+.photo-filters {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.input-filters {
+    margin-right: 5px;
+}
+
+.ctn-filters-input {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.ctn-filters-colapse {
+    position: absolute;
+    z-index: 1;
+    width: 265px;
+}
+
+.filters-colapse {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    margin-top: 1rem;
+}

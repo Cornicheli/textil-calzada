@@ -1,0 +1,9 @@
+.ctn-map {
+    background-color: rgb(228 222 215)
+}
+
+.map-location {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}

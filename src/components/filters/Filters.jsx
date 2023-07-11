@@ -1,5 +1,6 @@
 import { Option } from '../../asset/icon'
 import { useState } from 'react';
+import './filters.css'
 
 export default function Filters() {
 
@@ -13,13 +14,13 @@ export default function Filters() {
 
     return (
         <>
-            <div className="btn fs-3 text-center" style={{ height: '65px', display: 'flex', flexDirection: 'column', width: '265px', justifyContent: 'center', border: 'none' }}>
-                <button className="btn btn-link" style={{ textDecoration: 'none', fontSize: '20px', color: 'black', fontWeight: '600', borderBottom: 'solid 2px #c10d1b', borderRadius: '0px' }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            <div className="btn fs-3 text-center ctn-filters">
+                <button className="btn btn-link filters" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
                     Filtros
-                    <img style={{ width: '25px', height: '25px', margin: '5px' }} src={Option} />
+                    <img className='photo-filters' src={Option} />
                 </button>
             </div>
-            <div style={{ width: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div className='w-auto d-flex flex-column align-items-center'>
                 <label htmlFor="minPriceFilter">Filtra el precio a partir de :</label>
                 <div>
                     <input
@@ -33,11 +34,8 @@ export default function Filters() {
                     <span>${minPrice}</span>
                 </div>
             </div>
-            <div className="collapse show" id="collapseExample" style={{ position: 'absolute', zIndex: 1, width: '265px' }}>
-                <div className="accordion accordion-flush" id="accordionFlushExample" style={{
-                    boxShadow: '0 2px 4px 0 rgba(0, 0, 0, .25)',
-                    marginTop: '1rem'
-                }}>
+            <div className="collapse show ctn-filters-colapse" id="collapseExample">
+                <div className="accordion accordion-flush filters-colapse" id="accordionFlushExample">
                     <div className="accordion-item">
                         <h2 className="accordion-header">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
@@ -47,23 +45,23 @@ export default function Filters() {
                         <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas Multipropósito
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Por usos y características
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas para Indumentaria
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas para Decoración
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Ofertas
                                 </label>
                             </div>
@@ -75,104 +73,104 @@ export default function Filters() {
                                 Categoria
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
-                            <div className="accordion-body" style={{ minHeight: '200px', overflowY: 'hidden' }}>
+                        <div id="flush-collapseTwo" className="accordion-collapse collapse ctn-filters-input" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     - VER TODAS
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Disfraces
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Manualidades
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Tafeta
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Batista
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Pañolenci
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Uniformes
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Gasas
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Hospitalarias
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Acetato
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Raso Satén
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Tul
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Muestrarios
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Lentejuela Falso Paillete
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas de punto
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Satén
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Satén Elastizado
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Voile
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Sublimables
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cortinería
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
 
                                     Linos
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Lamé
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
 
                                     ofertas
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     - OFERTAS
                                 </label>
                             </div>
@@ -184,46 +182,46 @@ export default function Filters() {
                                 Sub-Categoria
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
+                        <div id="flush-collapseThree" className="accordion-collapse collapse ctn-filters-input" data-bs-parent="#accordionFlushExample" >
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Batista Lisa
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Tafeta Lisa
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Tul
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Gasa Cristal Organza
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Satén Elastizado
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Voile Liso
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Gasa Muselina
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Lino Cortinero
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Toalla Algodón
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Toalla Microfibra
                                 </label>
 
@@ -236,45 +234,45 @@ export default function Filters() {
                                 Ancho
                             </button>
                         </h2>
-                        <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
+                        <div id="collapseFour" className="accordion-collapse collapse ctn-filters-input" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1.00 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1,00 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1.10 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1.50 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1,50 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     1.60 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     2.80 mt.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     3.00 mt.
                                 </label>
 
@@ -291,27 +289,27 @@ export default function Filters() {
                         <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     100% Algodon
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     100% Poliester
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Brillosas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas de Punto
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Telas Planas
                                 </label>
 
@@ -325,115 +323,115 @@ export default function Filters() {
                                 Color
                             </button>
                         </h2>
-                        <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
+                        <div id="collapseSix" className="accordion-collapse collapse ctn-filters-input" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Rojo
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Negro
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Blanco
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Amarillo
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Naranja
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Violeta
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Lila
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Marrón
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Azul
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Verde
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Fuxia
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Beige
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Natural
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Gris
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Celeste
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Rosa
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Salmon
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Dorado
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Bordo
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Turquesa
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Coral
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Multicolor
                                 </label>
 
@@ -447,47 +445,47 @@ export default function Filters() {
                                 Composición
                             </button>
                         </h2>
-                        <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
+                        <div id="collapseSeven" className="accordion-collapse collapse ctn-filters-input" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     100% Algodón
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
-                                    100% Poliéster
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
+                                    100% Poliester
                                 </label>
 
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                {/* <label className="w-100 d-flex justify-content-start">
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     90% Poliéster - 10% Algodón
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     95% Poliéster - 5% Spx.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     95% Poliéster - 5% Spandex
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     96% Poliéster - 4% Spandex
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     83% Algodón - 17% Poliéster
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     83% Algodón - 17% Lino
-                                </label>
+                                </label> */}
 
                             </div>
                         </div>
@@ -502,11 +500,11 @@ export default function Filters() {
                         <div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Liso
                                 </label>
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Rayado
                                 </label>
                             </div>
@@ -522,7 +520,7 @@ export default function Filters() {
                         <div id="collapseNine" className="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Marcas
                                 </label>
                             </div>
@@ -538,37 +536,37 @@ export default function Filters() {
                         <div id="collapseTen" className="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     100 mts.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     15 kilos
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     30 mts.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     40 mts.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     50 mts.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     60 mts.
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     88 mts.
                                 </label>
 
@@ -582,230 +580,230 @@ export default function Filters() {
                                 Usos
                             </button>
                         </h2>
-                        <div id="collapseEleven" className="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample" style={{ maxHeight: '200px', overflowY: 'scroll' }}>
+                        <div id="collapseEleven" className="accordion-collapse collapse ctn-filters-input" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Acolchados
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Acrobacia con tela
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Almohadones
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Ambientaciones
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Babitas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Banderas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Blanqueria
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Blusas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Camisas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Camisetas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Camitas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cortinas y Telones
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cotillón
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cubre-sillas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cunas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Decoración
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Disfraces
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Entelados
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Escenografía
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Forreria
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Forros
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Fundas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Hospitales y Clínicas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Lencería
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Manualidades
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Murga y Circo
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Polleras
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Ropa de Dormir
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Ropa deportiva
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Sabanas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Sillas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Soleros
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Souvenires
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Sublimables
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Tops
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Uniformes
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Vestidos
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cortinas
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Peluches
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Sombreros
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Accesorios
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Cubre edredones
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Ropa de cama
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Bata
                                 </label>
 
                                 <label className="w-100 d-flex justify-content-start">
-                                    <input style={{ marginRight: '8px' }} type="checkbox" id="scales" name="hola" />
+                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     Toallas y Toallones
                                 </label>
                             </div>

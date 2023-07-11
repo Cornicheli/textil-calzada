@@ -1,3 +1,28 @@
+.ctn-card-multi {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 18px;
+    width: 80vw;
+}
+
+.label-search-multi {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    width: 100%;
+    height: 50px;
+}
+
+.input-search-multi {
+    width: 375px;
+    height: 100%;
+    outline: none;
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 .ctn-main-multiproposito {
     display: flex;
     flex-direction: row;
