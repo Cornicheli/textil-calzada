@@ -1,5 +1,5 @@
 import Fade from 'react-reveal/Fade';
-import '../../css/cardProducts.css'
+import '../css/cardProducts.css'
 
 export default function CardProducts() {
     return (

@@ -83,55 +83,48 @@
 /* BTN CARDS */
 
 .anchor-category {
-    width: 250px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #383e47;
-    border-radius: 8px;
-    color: white;
-    font-weight: 600;
-    gap: 8px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px;
+    width: 130px;
+    transition: all 0.5s;
     cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.818);
-    position: relative;
-    overflow: hidden;
-    transition-duration: .3s;
+    margin: 5px;
     text-decoration: none;
 }
 
-.anchor-category::before {
-    width: 250px;
-    height: 130px;
+.anchor-category span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.anchor-category span:after {
+    content: '+';
     position: absolute;
-    content: "";
-    background: #28282d;
-    color: white;
-    border-radius: 50%;
-    left: -100%;
+    opacity: 0;
     top: 0;
-    transition-duration: .3s;
-    mix-blend-mode: difference;
-    border-radius: 8px;
+    right: -10px;
+    transition: 0.5s;
 }
 
-.anchor-category:hover::before {
-    transition-duration: .3s;
-    transform: translate(100%, -50%);
-    border-radius: 0;
-    border-radius: 8px;
+.anchor-category:hover span {
+    padding-right: 15px;
 }
 
-.anchor-category:active {
-    transform: translate(5px, 5px);
-    transition-duration: .3s;
-    border-radius: 8px;
+.anchor-category:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .anchor-category:hover {
     color: white;
-    border-radius: 8px;
 }
 
 /* BTN CARDS */

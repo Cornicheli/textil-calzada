@@ -15,8 +15,8 @@
 /* PRODUCTS CARDS */
 
 .card-carrousel {
-  height: 450px;
-  width: 310px;
+  height: 400px;
+  width: 300px;
   border: solid 3px black;
   border-radius: 8px;
 }

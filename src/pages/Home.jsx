@@ -1,5 +1,6 @@
 import { CardProducts, Header, FormContac } from '../components'
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 import '../css/home.css'
 
 
@@ -20,31 +21,35 @@ export default function Home() {
                 <div className="carousel-inner">
                     {/* Slide 1 */}
                     <div className="carousel-item active c-item">
-                        <img src="https://www.meleroller.com.ar/media/blackout/cortinas-roller-blackout-mele-roller-01.jpg" className="d-block w-100 c-img" alt="Slide 1" />
+                        <img src="https://arredo.vtexassets.com/assets/vtex.file-manager-graphql/images/30aa78c4-050b-4bdc-b2a9-9a39baf15752___9904e210db46604d238bb68050aee9d0.jpg" className="d-block w-100 c-img" alt="Slide 1" />
                         <div className="carousel-caption top-0 mt-4">
                             <p className="mt-5 fs-3 text-uppercase">¡ LLEGO EL FRIO! </p>
-                            <h1 className="display-1 fw-bolder text-capitalize fs-1">ACOLCHADOS DE INVIERNO</h1>
-                            <button className="btn btn-primary px-4 py-2 fs-5 mt-5">Ver Más</button>
+                            <h2 className="display-1 fw-bolder text-capitalize fs-1">ACOLCHADOS DE INVIERNO</h2>
+                            <Link className='anchor-category mt-5'>
+                                <span>ver más</span>
+                            </Link>
                         </div>
                     </div>
                     {/* Slide 2 */}
                     <div className="carousel-item c-item">
-                        <img src="https://textilcalzada.com/wp-content/uploads/2020/05/MANTA-DE-CAMA_SLIDE.jpg" className="d-block w-100 c-img" alt="Slide 2" />
+                        <img src="https://arredo.vtexassets.com/assets/vtex.file-manager-graphql/images/13745182-282a-4cec-8950-25a62c28f38a___5297fd3100b1db8e081484aa3686f6cc.jpg" className="d-block w-100 c-img" alt="Slide 2" />
                         <div className="carousel-caption top-0 mt-4">
                             <p className="text-uppercase fs-3 mt-5">MANTAS TERMICAS Y POLARES</p>
-                            <p className="display-1 fw-bolder text-capitalize fs-1">DANUBIO</p>
-                            <button className="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                                data-bs-target="#booking-modal">Ver Más</button>
+                            <h2 className="display-1 fw-bolder text-capitalize fs-1">DANUBIO</h2>
+                            <Link className='anchor-category  mt-5'>
+                                <span>ver más</span>
+                            </Link>
                         </div>
                     </div>
                     {/* Slide 3 */}
                     <div className="carousel-item c-item">
-                        <img src="https://textilcalzada.com/wp-content/uploads/2020/06/imagen_roller_doble.png" className="d-block w-100 c-img" alt="Slide 3" />
+                        <img src="https://arredo.vtexassets.com/assets/vtex.file-manager-graphql/images/fe22be1c-46d4-4fca-bd8b-73ce2ac7f3aa___2243501193208ceb1ba5480c5e50266d.jpg" className="d-block w-100 c-img" alt="Slide 3" />
                         <div className="carousel-caption top-0 mt-4">
                             <p className="text-uppercase fs-3 mt-5">CORTINAS ROLLER</p>
-                            <p className="display-1 fw-bolder text-capitalize fs-1">PEDI TU PRESUPUESTO YA!</p>
-                            <button className="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
-                                data-bs-target="#booking-modal">Ver Más</button>
+                            <h2 className="display-1 fw-bolder text-capitalize fs-1">PEDI TU PRESUPUESTO YA!</h2>
+                            <Link className='anchor-category mt-5 '>
+                                <span>ver más</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
