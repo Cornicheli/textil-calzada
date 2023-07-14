@@ -1,6 +1,6 @@
-import { Option } from '../../asset/icon'
+import { Option } from '../asset/icon'
 import { useState } from 'react';
-import './filters.css'
+import '../css/filters.css'
 
 export default function Filters() {
 
@@ -456,37 +456,6 @@ export default function Filters() {
                                     <input className='input-filters' type="checkbox" id="scales" name="hola" />
                                     100% Poliester
                                 </label>
-
-                                {/* <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    90% Poliéster - 10% Algodón
-                                </label>
-
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    95% Poliéster - 5% Spx.
-                                </label>
-
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    95% Poliéster - 5% Spandex
-                                </label>
-
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    96% Poliéster - 4% Spandex
-                                </label>
-
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    83% Algodón - 17% Poliéster
-                                </label>
-
-                                <label className="w-100 d-flex justify-content-start">
-                                    <input className='input-filters' type="checkbox" id="scales" name="hola" />
-                                    83% Algodón - 17% Lino
-                                </label> */}
-
                             </div>
                         </div>
                     </div>

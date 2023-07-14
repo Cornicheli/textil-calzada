@@ -1,6 +1,6 @@
 import Fade from 'react-reveal/Fade';
-import "./formContac.css";
-import { Email, PhoneIcon, WhatsappIcon } from '../../asset/icon/index'
+import "../css/formContac.css";
+import { Email, PhoneIcon, WhatsappIcon } from '../asset/icon/index'
 
 function FormContac() {
     return (
@@ -52,7 +52,7 @@ function FormContac() {
                         </div>
                     </div>
                 </Fade>
-            </div >
+            </div>
             <div className="d-flex align-items-center m-2 p-1">
                 <Fade right>
                     <form className="card-form-contact">
@@ -76,7 +76,7 @@ function FormContac() {
                     </form>
                 </Fade>
             </div>
-        </section >
+        </section>
     );
 }
 

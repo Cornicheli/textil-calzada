@@ -1,9 +1,9 @@
 import InfiniteScroll from 'react-infinite-scroll-component';
-import multiPropositos from '../../mocks/multiPropositos';
+import multiPropositos from '../mocks/multiPropositos';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import './multiproposito.css';
 import { Link } from 'react-router-dom';
+import '../css/multiproposito.css';
 
 export default function MultiPropositos() {
     const [searchTerm, setSearchTerm] = useState('');

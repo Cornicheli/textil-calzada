@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './header.css';
+import '../css/header.css';
 
 const Header = () => {
 
@@ -50,21 +50,18 @@ const Header = () => {
     ];
 
     const NavLanas = [
-        { text: "Soft (Cashmillon)", to: "#" },
-        { text: "Hilo Algódon", to: "#" },
-        { text: "Brandy (Sedificada)", to: "#" },
-        { text: "Oaky (Gruesa)", to: "#" },
+        { text: "Soft (Cashmillon)", to: "/soft" },
+        { text: "Hilo Algódon", to: "/hilo-algodon" },
+        { text: "Brandy (Sedificada)", to: "/brandy" },
+        { text: "Oaky (Gruesa)", to: "/oaky" },
     ];
 
     return (
         <header className={`ctn-header navbar fixed-top ${isSticky ? 'flex' : ''}`}>
             <div className="container-fluid d-flex justify-content-around">
-                <h1 className="navbar-brand" style={{ color: 'black' }}>
+                <h1 className="navbar-brand text-dark">
                     Textil Calzada
                 </h1>
-                {/* <label style={{ width: '375px', height: '35px' }}>
-                    <input style={{ width: '100%', height: '100%', borderRadius: '8px', outline: 'none', border: ' none', padding: '7px' }} type="search" placeholder="¿Qué tela estas buscando?" />
-                </label> */}
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -76,10 +73,7 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div
-                    className="offcanvas offcanvas-end "
-                    style={{
-                        backgroundColor: '#e2f0fb', border: 'none'
-                    }}
+                    className="offcanvas offcanvas-end ctn-anchor-header"
                     tabIndex="-1"
                     id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel"
@@ -117,9 +111,7 @@ const Header = () => {
                                 >
                                     Blanco
                                 </Link>
-                                <ul className="dropdown-menu dropdown-menu" style={{
-                                    backgroundColor: '#e2f0fb', border: 'none'
-                                }}>
+                                <ul className="dropdown-menu dropdown-menu ctn-anchor-header">
                                     {NavLineaCama.map((link, index) => (
                                         <li className="cta text-dark fw-medium" key={index}>
                                             <Link className="dropdown-item text-decoration-none text-dark fw-medium fs-5" to={link.to}>
@@ -139,9 +131,7 @@ const Header = () => {
                                 >
                                     Telas - Confección
                                 </Link>
-                                <ul className="dropdown-menu dropdown-menu" style={{
-                                    backgroundColor: '#e2f0fb', border: 'none'
-                                }}>
+                                <ul className="dropdown-menu dropdown-menu ctn-anchor-header">
                                     {NavTelas.map((link, index) => (
                                         <li className=" text-dark fw-medium" key={index}>
                                             <Link className="dropdown-item text-decoration-none text-dark fw-medium fs-5" to={link.to}>
@@ -161,9 +151,7 @@ const Header = () => {
                                 >
                                     Lanas
                                 </Link>
-                                <ul className="dropdown-menu dropdown-menu" style={{
-                                    backgroundColor: '#e2f0fb', border: 'none'
-                                }}>
+                                <ul className="dropdown-menu dropdown-menu ctn-anchor-header">
                                     {NavLanas.map((link, index) => (
                                         <li className="cta text-dark fw-medium" key={index}>
                                             <Link className="dropdown-item text-decoration-none text-dark fw-medium fs-5" to={link.to}>

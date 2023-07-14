@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import { Header } from "../components"
 import { CarrouselProducts } from "../components"
-import '../components/carrouselProducts/cardCategory.css'
-import '../components/carrouselHeader/carrousel.css'
+import '../css/cardCategory.css'
+
 
 export default function Telax() {
     return (

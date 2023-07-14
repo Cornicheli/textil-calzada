@@ -12,7 +12,7 @@ export default function CardCarousel(props) {
             <h5 className='fs-4 m-1 p-1'>{title}</h5>
             <p>{description}</p>
             <p> $ {price}</p>
-            <div>
+            <div className='btn'>
                 <button className="anchor-category">AGREGAR</button>
             </div>
         </li>
