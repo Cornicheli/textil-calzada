@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/header.css';
+import '../css/header.css'
 
 const Header = () => {
 
@@ -57,7 +57,7 @@ const Header = () => {
     ];
 
     return (
-        <header className={`ctn-header navbar fixed-top ${isSticky ? 'flex' : ''}`}>
+        <nav className={`ctn-header navbar fixed-top ${isSticky ? 'flex' : ''}`}>
             <div className="container-fluid d-flex justify-content-around">
                 <h1 className="navbar-brand text-dark">
                     Textil Calzada
@@ -165,7 +165,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </header>
+        </nav>
     );
 };
 

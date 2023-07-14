@@ -1,5 +1,4 @@
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { CardCarousel } from '../components'
 import { productData, responsive } from "../mocks/products";
 // import { Link } from "react-router-dom";
@@ -17,11 +16,11 @@ export default function CarrouselProducts() {
     ));
 
     return (
-        <section className="d-flex align-items-center justify-content-center flex-column p-5">
+        <section className="d-flex align-items-center justify-content-center flex-column p-3">
             <section>
-                <h1 className="text-center fs-1 mb-4">
+                <h2 className="text-center mb-4">
                     LOS MÁS VENDIDOS
-                </h1>
+                </h2>
             </section>
             <Carousel className="w-100 p-3" responsive={responsive}>
                 {product}
