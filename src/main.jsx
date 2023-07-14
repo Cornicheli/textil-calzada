@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home, Multi } from './pages'
-import { Telas, MultiPropositos } from './components'
+import { Telas } from './components'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
