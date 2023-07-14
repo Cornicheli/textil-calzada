@@ -19,11 +19,6 @@
     margin: 10px
 }
 
-img {
-    width: 100%;
-    vertical-align: middle;
-}
-
 .item-card .txt {
     position: absolute;
     top: 0;

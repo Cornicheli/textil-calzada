@@ -1,5 +1,5 @@
-import Fade from 'react-reveal/Fade';
 import "../css/formContac.css";
+import Fade from 'react-reveal/Fade';
 import { Email, PhoneIcon, WhatsappIcon } from '../asset/icon/index'
 
 function FormContac() {
