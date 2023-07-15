@@ -58,7 +58,7 @@ const Header = () => {
 
     return (
         <nav className={`ctn-header navbar fixed-top ${isSticky ? 'flex' : ''}`}>
-            <div className="container-fluid d-flex justify-content-around">
+            <div className="container-fluid d-flex justify-content-around flex-row-reverse">
                 <h1 className="navbar-brand text-dark">
                     Textil Calzada
                 </h1>
@@ -73,10 +73,11 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div
-                    className="offcanvas offcanvas-end ctn-anchor-header"
+                    className="offcanvas offcanvas-start ctn-anchor-header"
                     tabIndex="-1"
                     id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel"
+                    data-bs-scroll="true"
                 >
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title fs-4" id="offcanvasDarkNavbarLabel">
