@@ -33,10 +33,6 @@
     opacity: 0;
 }
 
-.txt {
-    padding: 25px;
-}
-
 .item-card:hover .txt {
     opacity: 1;
     transition: opacity 500ms;
@@ -55,7 +51,6 @@
     display: block;
     width: 0%;
     height: 2px;
-    margin: 10px 0;
     background-color: white;
     transition: width .5s .2s;
 }
