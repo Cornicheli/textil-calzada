@@ -19,20 +19,20 @@ function FormContac() {
                         <div className="d-flex align-items-center justify-content-evenly flex-wrap m-2 p-2">
                             <div className='ctn-contact'>
                                 <a className='text-dark fs-5 text-decoration-none' href='tel:555-666-7777' target="_blank" rel="noreferrer">
-                                    <img className="icon-contact" src={PhoneIcon} />
+                                    <img className="icon-contact" src={PhoneIcon} alt="logo-number" />
                                     (235) 462-3623
                                 </a>
                             </div>
                             <div className='ctn-contact'>
                                 <a className='text-dark fs-5 text-decoration-none' href='https://api.whatsapp.com/send/?phone=541136821653&text=Buenos Dias, gracias por comunicarte con textil calzada, dejanos un mensaje y te responderemo a la brevedad.
                                 ' target="_blank" rel="noreferrer">
-                                    <img className="icon-contact" src={WhatsappIcon} />
+                                    <img className="icon-contact" src={WhatsappIcon} alt="logo-whatsapp" />
                                     1136821653
                                 </a>
                             </div>
                             <div className='ctn-contact'>
                                 <a className='text-dark fs-5 text-decoration-none' href="mailto:m.bluth@example.com" target="_blank" rel="noreferrer">
-                                    <img className="icon-contact" src={Email} />
+                                    <img className="icon-contact" src={Email} alt="logo-email" />
                                     textil_calzada@hotmail.com
                                 </a>
                             </div>

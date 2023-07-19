@@ -25,13 +25,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 25px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     opacity: 0;
+}
+
+.txt {
+    padding: 25px;
 }
 
 .item-card:hover .txt {
