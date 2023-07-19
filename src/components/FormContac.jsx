@@ -56,22 +56,22 @@ function FormContac() {
             <div className="d-flex align-items-center m-2 p-1">
                 <Fade right>
                     <form className="card-form-contact">
-                        <div className="inputBox">
+                        <label className="inputBox">
                             <input className='fs-5' name='nombre' type="text" required="required" />
                             <span className="user">Nombre</span>
-                        </div>
-                        <div className="inputBox">
+                        </label>
+                        <label className="inputBox">
                             <input className='fs-5' name='apellido' type="text" required="required" />
                             <span>Apellido</span>
-                        </div>
-                        <div className="inputBox">
+                        </label>
+                        <label className="inputBox">
                             <input className='fs-5' name='email' type="email" required="required" />
                             <span>Email</span>
-                        </div>
-                        <div className="inputBox">
+                        </label>
+                        <label className="inputBox">
                             <input className='fs-3' name='mensaje' type="text" required="required" />
                             <span>Mensaje</span>
-                        </div>
+                        </label>
                         <button className="btn-form">Enviar</button>
                     </form>
                 </Fade>
